@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Red Hat Display;
+    font-size: 16px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    filter: drop-shadow(0 0 30px rgb(150, 148, 148));
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    image-rendering: 10%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+.inhalt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;    
+    text-align: center;
+}
+.header{
+    width: 100%;
+    font-weight: 900;
+    font-size: 30px;
+}
+.text{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%)
+}
+.order{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.order >img{
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+.order >img:hover{
+    transform: rotate(360deg);
+}
+.change{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.annual{
+    font-weight: 900;
+}
+.price{
+    color: hsl(224, 23%, 55%)
+}
+.payment{
+    margin-top: 20px;
+    height: 40px;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 10px;
+    line-height: 40px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 2px 5px 20px 5px rgba(0, 0, 0, 0.235);
+
+}
+.payment:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.cancel{
+    margin-top: 20px;
+    font-weight: 700;
+    width: 100%;
+    color: hsl(224, 23%, 55%)
+}
+.cancel:hover{
+    cursor: pointer;
+    color: black;
+}
